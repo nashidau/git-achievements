@@ -299,6 +299,13 @@ function check_for_achievements
                 ;;
             esac
             ;;
+	reset )
+	    case $2 in
+	        --hard )
+		unlock_achievement "Vandal" "Destroyed changes using git reset --hard" 
+		;;
+	    esac
+	    ;;
         shell )
             unlock_achievement "Beach Lion" "Restricted login shell for GIT-only SSH access with git shell"
             ;;
